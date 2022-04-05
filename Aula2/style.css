@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px 0;
+    vertical-align: center;
+    font-family: 'arial';
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 10px auto;
+}
+
+form {
+    padding: 5px 10px;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 8px;
+    margin: 8px;
+    color: #555;
+    font-size: 16px;
+    border: 4px solid #8581817c;
+    border-radius: 10px;
+}
+
+input[type="number"]:focus{
+    border: 4px solid #04AA6B;
+}
+
+input[type="submit"]{
+    background: #04AA6B;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
