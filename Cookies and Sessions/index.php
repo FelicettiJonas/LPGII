@@ -35,7 +35,7 @@ if (!empty($_POST)) {
     <form action="." method="POST">
         <div class="linha">
             <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" id="usuario">
+            <input type="text" name="usuario" id="usuario" value="<?php echo isset($_COOKIE['usuario']) ? $_COOKIE['usuario'] : ""; ?>">
         </div>
         <div class="linha">
             <label for="senha">Senha:</label>
@@ -43,6 +43,5 @@ if (!empty($_POST)) {
         </div>
         <input type="submit" value="Acessar!" class="button">
     </form>
-    
 </body>
 </html>
