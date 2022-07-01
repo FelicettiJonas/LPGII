@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $linhas = file("../produtos.txt");
+    $linhas = file("../../produtos.txt");
 
     $categorias = ['bebidas', 'calçado', 'mobilia', 'brinquedo', 'vestuario'];
     $arrayAll = [];
@@ -41,18 +41,18 @@
 
 <main>
         <div>
-            <p>Promoção! Compre agora <span><?php echo $maisAcessado."s" ?></span> com 5% de desconto no Pix </p>
+            <p class="text-purple-700">Promoção! Compre agora <span><?php echo $maisAcessado."s" ?></span> com 5% de desconto no Pix </p>
         </div>
         <?php foreach ($produtos as $key => $produto) { ?>
                 <ul>
-                    <li><?php echo $produto['id']; ?></li>
+                    <li class="text-emerald-700"><?php echo $produto['id']; ?></li>
                     <li><?php echo $produto['nome']; ?></li>
                     <li><?php echo $produto['valor']; ?></li>
                     <li><?php echo $produto['categoria']; ?></li>
                     <img src=<?php echo $produto['img']?> alt="Foto do produto">
                     <li>
                         <a href="clicou.php?id=<?=$produto['id']?>">
-                            <img src="../img/carrinhoIcon.png" height="20px">
+                            <img src="../../img/carrinhoIcon.png" height="20px">
                             Adicionar ao Carrinho
                         </a>
                     </li>
